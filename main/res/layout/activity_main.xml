@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:iconifiedByDefault="false"
+        android:searchHintIcon="@null"
+        android:queryHint="Search.."
+        android:closeIcon="@drawable/baseline_clear_24"
+        android:searchIcon="@drawable/baseline_search_24"
+        android:background="@drawable/search_bkg"
+        >
+    </androidx.appcompat.widget.SearchView>
+
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+        android:layout_below="@id/search"
+        android:layout_above="@id/bottomNavigationView"
+
+        />
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemBackground="@color/orange"
+        app:itemTextColor="@drawable/serlector"
+        app:itemIconTint="@drawable/serlector"
+        />
+
+</RelativeLayout>

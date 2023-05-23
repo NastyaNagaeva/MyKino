@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonActivity"
+    android:background="@drawable/regisrpng"
+
+    >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRegistration"
+        android:layout_width="302dp"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red"
+        android:text="зарегистрироваться"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="top|center"
+        android:text="войти"
+        android:textColor="@color/red"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemBackground="@color/orange"
+        app:itemTextColor="@drawable/serlector"
+        app:itemIconTint="@drawable/serlector"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Tape"
+        android:icon="@drawable/baseline_movie_creation_24"
+        android:iconTint="@color/white"
+        android:id="@+id/tape"/>
+    <item android:title="Like"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_bookmark_border_24"
+        android:id="@+id/like"/>
+    <item android:title="Shop"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:id="@+id/shop"/>
+    <item android:title="Profile"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_person_2_24"
+        android:id="@+id/person"/>
+
+</menu>

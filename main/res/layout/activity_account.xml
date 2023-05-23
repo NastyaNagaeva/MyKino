@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity"
+    android:background="@color/cream"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:text="">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/baseline_person_2_24"></ImageView>
+
+        <TextView
+            android:id="@+id/usernameActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            >
+
+        </TextView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:textColor="@color/black"/>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_gravity=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:menu="@menu/bottom_nav_menu"
+        app:itemBackground="@color/orange"
+        app:itemTextColor="@drawable/serlector"
+        app:itemIconTint="@drawable/serlector"
+        />
+
+</LinearLayout>
